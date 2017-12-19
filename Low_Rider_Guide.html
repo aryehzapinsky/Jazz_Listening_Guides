@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>References - Credit Where it is Due</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Low_Rider_Guide</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11780,38 +11780,102 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">whole_song</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;audio controls src=&quot;http://aryehzapinsky.github.io/Jazz_Listening_Guides/music/Low_Rider.m4a&quot; /&gt;&#39;</span><span class="p">)</span>
+<span class="n">whole_song_tracked</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;video controls src=&quot;http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_whole.mp4&quot; /&gt;&#39;</span><span class="p">)</span>
+
+<span class="n">pieces</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">snippet</span> <span class="o">=</span> <span class="p">[</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;audio controls src=&quot;http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_</span><span class="si">{}</span><span class="s1">.wav&quot; /&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pieces</span><span class="p">)]</span>
+<span class="n">beat_snip</span> <span class="o">=</span> <span class="p">[</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;video controls src=&quot;http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_</span><span class="si">{}</span><span class="s1">.mp4&quot; /&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pieces</span><span class="p">)]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Sources-for-Jazz-Project">Sources for Jazz Project<a class="anchor-link" href="#Sources-for-Jazz-Project">&#182;</a></h4><ul>
-<li><p>Librosa Documentation - <a href="http://librosa.github.io/librosa/">http://librosa.github.io/librosa/</a></p>
-</li>
-<li><p>Music Information Retrival - <a href="http://musicinformationretrieval.com/">http://musicinformationretrieval.com/</a></p>
-<ul>
-<li>For audio clip processing with Librosa</li>
-<li>For idea of hosting website through GitHub pages</li>
-<li>For file structure to generate webpages</li>
-<li>For the awesome "Back to Index" idea and using a left arrow</li>
-<li>This is the github link for the site <a href="https://github.com/stevetjoa/stanford-mir">https://github.com/stevetjoa/stanford-mir</a></li>
+<h1 id="&quot;Low-Rider&quot;">"Low Rider"<a class="anchor-link" href="#&quot;Low-Rider&quot;">&#182;</a></h1><h1 id="by-Chris-Washburne-and-the-Syotos-Band">by Chris Washburne and the Syotos Band<a class="anchor-link" href="#by-Chris-Washburne-and-the-Syotos-Band">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Listening-guide-created-by-Jonathan-Deluty-and-Aryeh-Zapinsky">Listening guide created by Jonathan Deluty and Aryeh Zapinsky<a class="anchor-link" href="#Listening-guide-created-by-Jonathan-Deluty-and-Aryeh-Zapinsky">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Performers:">Performers:<a class="anchor-link" href="#Performers:">&#182;</a></h4><ul>
+<li>Chris Washburne - trombone </li>
+<li>John Walsh - trumpet</li>
+<li>Ole Mathisen - tenor saxophone</li>
+<li>Yeissonn Villamar - keyboard</li>
+<li>Leo Traversa - bass</li>
+<li>Vince Cherico - drums/percussion</li>
 </ul>
-</li>
-<li><p>Pythonic Preambulations - <a href="http://jakevdp.github.io/">http://jakevdp.github.io/</a></p>
-<ul>
-<li>A fantastic webstie that uses published ipython notebooks for each post. </li>
-<li>For github organization of files - <a href="https://github.com/jakevdp/jakevdp.github.io">https://github.com/jakevdp/jakevdp.github.io</a> </li>
-<li>For loading videos onto website - <a href="http://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/">http://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/</a></li>
-</ul>
-</li>
-<li><p>Stack Overflow Extremely Important answers:</p>
-<ul>
-<li><p>To combine the plot images with the proper intervals - <a href="https://superuser.com/questions/617392/ffmpeg-image-sequence-with-various-durations">https://superuser.com/questions/617392/ffmpeg-image-sequence-with-various-durations</a></p>
-</li>
-<li><p>To merge video and audio - <a href="https://superuser.com/questions/277642/how-to-merge-audio-and-video-file-in-ffmpeg">https://superuser.com/questions/277642/how-to-merge-audio-and-video-file-in-ffmpeg</a></p>
-</li>
-</ul>
-</li>
-</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">whole_song</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/music/Low_Rider.m4a" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(0:00-0:06)</p>
 
 </div>
 </div>
@@ -11820,13 +11884,868 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="README-from-GitHub">README from GitHub<a class="anchor-link" href="#README-from-GitHub">&#182;</a></h4><p>The goal of this project is to create more interactive listening guides for some jazz pieces from a jazz history class in Columbia University.</p>
-<p>Initially, I tried using a package called aubio and tapestrea to track the beat. These initial attempts were unsuccessful.</p>
-<p>Then, I found a python package called Librosa and a website called Music Information Retrival. These two resources furthered the quest to track beats and plot the results. You can check the References page/file for more details.</p>
-<p>To plot the results, I initially tried using Matplotlib but that resource does not allow for variable interval duration between images. So I save the images locally to a tmp file and then use FFMPEG to combine the plot images with variable intervals. Once again, more details follow in the References page/file.</p>
+<p>The piece begins with a cowbell imitating the percussive opening from the original song by War. It is a measure of straight quarter and eighth notes, followed by a slightly syncopated combination of the same rhythmic units (two quarter notes, four eighth notes).</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_0.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[4]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_0.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(0:06-0:19)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Low Rider’s iconic pentatonic bassline enters, both on electric bass and on both clefs in the piano part. It establishes the key as G, but with a mixolydian feel from the very first note: F-natural. The figure repeats three times before introducing the still unheard horn instruments in the song: trumpet, tenor saxophone, and trombone. The introduction section ends with a sequence of arpeggiated ascending fourths followed by a chromatic descent and re-ascent ending on a G7 chord, re-establishing the key.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_1.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_1.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Verse">Verse<a class="anchor-link" href="#Verse">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(0:20-0:44)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Washburne enters on the trombone to play the melody over the same bassline and a G7 vamp on piano. This is the most stripped-down verse, as the arrangement layers the horn parts in the following repetitive phrases. Washburne plays the simple 8-note melody with an improvised fill while the piano plays a rolling accompaniment underneath. In between the melody sections, he adds a short improvised fill, making the trombone distinct from the vocal part it imitates.The next phrase, the most famous motif of this tune, is the cha cha eighth note melody, played twice. For this section, Washburne is joined by Walsh and Mathisen on the note B, playing a three-part unison the first time. The second time, the horns diverge, leaving only the trumpet on the note B, while the saxophone and trombone harmonize on the G7 chord, adding an 11 (C) for color. The phrase ends on a V chord, but with a diminished 5th, giving the end of the phrase a jazzy half cadence.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_2.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[8]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_2.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(0:45-1:06)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The phrase repeats, but instead of Washburne improvising the fills, there are orchestrated harmonizing fills in the piano and the horns. These sections bounce between a distance of more than an octave, opening up the phrase. The final chord of the verse is the same as in the verse before. Leading up to it is a sequentially descending group of fourths, almost a mirror image of the ascending fourths from the introduction section.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_3.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[10]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_3.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Pre-chorus">Pre-chorus<a class="anchor-link" href="#Pre-chorus">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(1:06-1:18)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In a move that compresses the style of the verse to just a few measures, the horn section plays a series of 8th notes on the note F before resting on G, followed by a harmonized series of 8th notes ending on a VI chord, a deceptive cadence, with an 11th thrown in for dissonance in the bass. This leads into the solo sections.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[11]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_4.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_4.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Solos">Solos<a class="anchor-link" href="#Solos">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(1:19-2:04)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A 32 bar solo from Washburne on the trombone. All solos are set on top of a G7 vamp with a straight 4/4 beat. 16 bars in, the horn section joins with backing chords.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[13]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_5.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_5.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(2:04-2:47)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Another 32 bar solo taken by Villamar on the piano. This solo is significantly faster than the trombone solo, and the horns lay out for the entire time.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_6.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[16]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_6.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(2:46-3:30)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mathisen’s saxophone solo starts on bar 35, ‘stealing’ the solo from Villamar when he felt ready to come in with a soaring high D note. He plays a series of Charlie-Parker-like runs as the horns come in in the background. Dynamically, this solo crescendos up until the climax at the end before returning to the verse.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_7.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[18]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_7.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(3:31-3:35)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A return of the ascending fourth sequence leading into the final verse.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[19]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_8.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[20]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_8.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(3:36-4:15)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>An identical A section to the second one, with all of the orchestrated harmonized fills in the horn section.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snippet</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[21]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<audio controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_9.wav" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beat_snip</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[22]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_9.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">whole_song_tracked</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[23]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video controls src="http://aryehzapinsky.github.io/Jazz_Listening_Guides/notebooks/results/LR_whole.mp4" />
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
